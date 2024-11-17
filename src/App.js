@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+        <div className="toggle-container">
+    <label for="themeToggle">Dark</label>
+    <div className="toggle-switch" id="themeToggle" data-state="light"></div>
+  </div>
+  <div className="card">
+    <div className="card-header">Short Circuit Evaluation</div>
+    <div className="card-body">
+      <p>You are logged in</p>
+      <p>You are logged in as Alok</p>
     </div>
+    <div className="card-footer">
+      <button>Toggle Login State</button>
+      <button>Set User</button>
+      <button>Clear User</button>
+    </div>
+  </div>
+    </>
   );
 }
 
