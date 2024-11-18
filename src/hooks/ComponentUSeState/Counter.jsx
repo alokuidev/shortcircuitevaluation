@@ -40,8 +40,8 @@ const Counter = () => {
                     <label htmlFor="styled-input" className="input-label">Add Value</label>
                 </div>
                 <div className="button-group">
-                    <button id="decrement" className="counter-button" onClick={decrement}>- Counter</button>
-                    <button id="increment" className="counter-button" onClick={increment}>+ Counter</button>
+                    <button id="decrement" className="counter-button" onClick={decrement} disabled={count <=0 }>- Counter</button>
+                    <button id="increment" className="counter-button" onClick={increment} disabled={count >= 100 }>+ Counter</button>
                 </div>
             </div>
         </>
