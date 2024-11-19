@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .contact-container {
+    background-color: #ffffff;
+    padding: 40px; /* Increased padding for more spacing inside */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 700px; /* Wider container */
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Slightly larger title */
+    color: #4a4a4a; /* Neutral color for the title */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased spacing between fields */
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #4a4a4a; /* Neutral text color */
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px; /* Larger padding for input fields */
+    font-size: 1rem; /* Larger font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #6a11cb;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px; /* Larger padding for the button */
+    font-size: 1.1rem; /* Slightly larger button text */
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+  }
+  
