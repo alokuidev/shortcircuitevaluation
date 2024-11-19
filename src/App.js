@@ -1,5 +1,7 @@
-import Counter from "./hooks/ComponentUSeState/Counter";
+// import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
+
+import Form from "./hooks/FormComponent/Form";
 
 
 function App() {
@@ -8,7 +10,8 @@ function App() {
   return (
     <>
         {/* <State/> */}
-        <Counter/>
+        {/* <Counter/> */}
+        <Form/>
     </>
   );
 }
