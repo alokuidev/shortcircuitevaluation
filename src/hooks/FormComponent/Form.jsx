@@ -6,7 +6,6 @@ const Form = () =>{
     const [phone, setPhone] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword]= useState('');
-    const [gender,setGender] = useState('');
     
     const handleChange = (e) =>{
         const {id , value} = e.target;

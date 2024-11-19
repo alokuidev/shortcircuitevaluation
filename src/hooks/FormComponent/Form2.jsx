@@ -1,46 +1,31 @@
 import { useState } from 'react';
 import './Form.css';
-const Form = () =>{
-    const [name, setName] = useState('');
-    const [user, setUser] = useState('');
-    const [phone, setPhone] = useState('');
-    const [email,setEmail] = useState('');
-    const [password,setPassword]= useState('');
-    const [gender,setGender] = useState('');
+const Form2 = () =>{
+    const [formVal, setFormVal] = useState({
+        name:'',
+        username:'',
+        phone:'',
+        email:'',
+        password:''
+    });
     
     const handleChange = (e) =>{
         const {id , value} = e.target;
         // eslint-disable-next-line default-case
-        switch(id){
-            case "name":
-                setName(value);
-                break;
-            case "username":
-                setUser(value);
-                break;
-            case "phone":
-                setPhone(value);
-                break;
-            case "email":
-                setEmail(value)
-                break;
-            case "password":
-                setPassword(value);
-                break;
-        }
+        setFormVal((prevVal) => ({...prevVal, [id] : value}))
     }
 
     const formSubmit = (e) =>{
         e.preventDefault();
-        const formData = {
-            name: name,
-            username: user,
-            phone:phone,
-            email:email,
-            password:password
-
-        }
-        console.log(formData);
+        
+        
+        setFormVal({
+            name:'',
+            username:'',
+            phone:'',
+            email:'',
+            password:''
+        });
     }
     
     return(
@@ -48,43 +33,43 @@ const Form = () =>{
     <div className="form-container">
     <h1>REGISTRATION FORM</h1>
     <div className="">
-        <div className='fullWidth'>My Name:&nbsp;{name}</div>
-        <div className='fullWidth'>My Contact Number:&nbsp;{phone}</div>
-        <div className='fullWidth'>My Email:&nbsp;{email}</div>
+        <div className='fullWidth'>My Name:&nbsp;{formVal.name}</div>
+        <div className='fullWidth'>My Contact Number:&nbsp;{formVal.phone}</div>
+        <div className='fullWidth'>My Email:&nbsp;{formVal.email}</div>
     </div>
     <form onSubmit={formSubmit}>
       {/* <!-- Row for Name and Username --> */}
       <div className="form-row">
         <div className="form-group">
-          <label for="name">NAME</label>
-          <input type="text" id="name" name='name' value={name} onChange={handleChange} placeholder="Enter your name" autocomplete="off" required/>
+          <label htmlFor="name">NAME</label>
+          <input type="text" id="name" name='name' value={formVal.name} onChange={handleChange} placeholder="Enter your name" autocomplete="off" required/>
         </div>
         <div className="form-group">
-          <label for="username">USERNAME</label>
-          <input type="text" id="username" name='username' value={user} onChange={handleChange} placeholder="Enter your username" autocomplete="off" required/>
+          <label htmlFor="username">USERNAME</label>
+          <input type="text" id="username" name='username' value={formVal.username} onChange={handleChange} placeholder="Enter your username" autocomplete="off" required/>
         </div>
       </div>
       
       {/* <!-- Phone Number Field --> */}
       <div className="form-group">
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" id="phone" name='phone' placeholder="Enter your phone number" value={phone} onChange={handleChange} autocomplete="off" required/>
+        <label htmlFor="phone">PHONE NUMBER</label>
+        <input type="tel" id="phone" name='phone' placeholder="Enter your phone number" value={formVal.phone} onChange={handleChange} autocomplete="off" required/>
       </div>
       
       {/* <!-- Email Field --> */}
       <div className="form-group">
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" value={email} onChange={handleChange} autocomplete="off" required/>
+        <label htmlFor="email">EMAIL</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" value={formVal.email} onChange={handleChange} autocomplete="off" required/>
       </div>
       
       {/* <!-- Password and Confirm Password --> */}
       <div className="form-row">
         <div className="form-group">
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name='password' placeholder="Enter your password" onChange={handleChange}  value={password} autocomplete="off" required/>
+          <label htmlFor="password">PASSWORD</label>
+          <input type="password" id="password" name='password' placeholder="Enter your password" onChange={handleChange}  value={formVal.password} autocomplete="off" required/>
         </div>
         <div className="form-group">
-          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <label htmlFor="confirm-password">CONFIRM PASSWORD</label>
           <input type="password" id="confirm-password" placeholder="Confirm your password" autocomplete="off" required/>
         </div>
       </div>
@@ -107,4 +92,4 @@ const Form = () =>{
     )
 }
 
-export default Form;
+export default Form2;
