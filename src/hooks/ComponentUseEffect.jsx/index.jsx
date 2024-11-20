@@ -4,9 +4,12 @@ export const USeEffectFun = () =>{
     const [count,setCount] = useState(0);
     const [date,setDate] = useState(0);
     const [time,setTime] = useState(0);
+
     useEffect(() =>{
         console.log('The count is:'+ count);
+        document.title = `Count: ${count}`;
     },[count]);
+    
     useEffect(()=>{
          
         setInterval( () =>{
