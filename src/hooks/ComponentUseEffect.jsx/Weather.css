@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Dropdown Styling */
+  .dropdown {
+    margin-bottom: 120px;
+  }
+  
+  .dropdown label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .dropdown select {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Weather Cards Styling */
+  .weather-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .weather-card {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Specific Weather Styles */
+  .sunny {
+    background: linear-gradient(135deg, #FFD700, #FF8C00);
+    animation: sunny-animation 3s infinite;
+  }
+  
+  .rainy {
+    background: linear-gradient(135deg, #4A90E2, #1C3D76);
+    animation: rainy-animation 3s infinite;
+  }
+  
+  .cloudy {
+    background: linear-gradient(135deg, #B0BEC5, #78909C);
+    animation: cloudy-animation 3s infinite;
+  }
+  
+  /* Animations */
+  @keyframes sunny-animation {
+    0%, 100% {
+      background: linear-gradient(135deg, #FFD700, #FF8C00);
+    }
+    50% {
+      background: linear-gradient(135deg, #FFEF00, #FFA500);
+    }
+  }
+  
+  @keyframes rainy-animation {
+    0%, 100% {
+      background: linear-gradient(135deg, #4A90E2, #1C3D76);
+    }
+    50% {
+      background: linear-gradient(135deg, #6FB4F4, #2B50A0);
+    }
+  }
+  
+  @keyframes cloudy-animation {
+    0%, 100% {
+      background: linear-gradient(135deg, #B0BEC5, #78909C);
+    }
+    50% {
+      background: linear-gradient(135deg, #CFD8DC, #90A4AE);
+    }
+  }
+  
+  /* Inner Text Styling */
+  .city {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .temp {
+    font-size: 1.2rem;
+  }
+  
+  .condition {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
