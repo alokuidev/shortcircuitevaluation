@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .subscriber-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .number {
+    font-size: 1.5rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  

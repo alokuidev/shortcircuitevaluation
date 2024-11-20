@@ -1,7 +1,9 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
 
-import { USeEffectFun } from "./hooks/ComponentUseEffect.jsx";
+import Cleanup from "./hooks/ComponentUseEffect.jsx/Cleanup";
+
+// import { USeEffectFun } from "./hooks/ComponentUseEffect.jsx";
 // import { Contact } from "./hooks/FormComponent/Contact";
 
 // import Login from "./hooks/FormComponent/LoginForm";
@@ -20,7 +22,8 @@ function App() {
         {/* <Form2/> */}
         {/* <Login/> */}
         {/* <Contact/> */}
-        <USeEffectFun/>
+        {/* <USeEffectFun/> */}
+        <Cleanup/>
     </>
   );
 }
