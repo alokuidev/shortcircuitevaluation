@@ -1,7 +1,8 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
 
-import { Contact } from "./hooks/FormComponent/Contact";
+import { USeEffectFun } from "./hooks/ComponentUseEffect.jsx";
+// import { Contact } from "./hooks/FormComponent/Contact";
 
 // import Login from "./hooks/FormComponent/LoginForm";
 
@@ -18,7 +19,8 @@ function App() {
         {/* <Counter/> */}
         {/* <Form2/> */}
         {/* <Login/> */}
-        <Contact/>
+        {/* <Contact/> */}
+        <USeEffectFun/>
     </>
   );
 }
