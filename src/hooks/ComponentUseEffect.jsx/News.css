@@ -44,6 +44,14 @@ body {
     font-size: 1.2rem;
     margin: 0 0 10px;
     color: #222;
+    width: fit-content; /* Adjusts width dynamically */
+    white-space: break-spaces; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowed text */
+    text-overflow: ellipsis; /* Adds the "..." for overflowed text */
+    max-width: 30ch; 
+    min-height: 70px;
+    color: cadetblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .news-desc {
@@ -54,5 +62,10 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Limit description to 3 lines */
     -webkit-box-orient: vertical;
+    width: 90%; /* Adjusts width dynamically */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowed text */
+  text-overflow: ellipsis; /* Adds the "..." for overflowed text */
+  max-width: 30ch; 
   }
   
