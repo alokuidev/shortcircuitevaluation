@@ -20,7 +20,7 @@ const Weather = () => {
     <div className="container">
     {/* <!-- Country Dropdown --> sunny rainy cloudy*/}
     <div className="dropdown">
-      <label for="country">Select Country:</label>
+      <label for="country">Select City:</label>
       <select id="country" onChange={changeCountry}>
         <option value="Thiruvananthapuram">Thiruvananthapuram</option>
         <option value="Patna">Patna</option>
@@ -28,6 +28,9 @@ const Weather = () => {
         <option value="Mumbai">Mumbai</option>
         <option value="Delhi">Delhi</option>
         <option value="Pune">Pune</option>
+        <option value="Theni">Theni</option>
+        <option value="Indore">Indore</option>
+        <option value="Vadodra">Vadodra</option>
       </select>
     </div>
 

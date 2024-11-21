@@ -1,8 +1,12 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
 
+import { Pokemon } from "./hooks/ComponentUseEffect.jsx/Pokemon";
+
 // import { News } from "./hooks/ComponentUseEffect.jsx/News";
-import Weather from "./hooks/ComponentUseEffect.jsx/Weather";
+
+// import Weather from "./hooks/ComponentUseEffect.jsx/Weather";
+
 // import Cleanup from "./hooks/ComponentUseEffect.jsx/Cleanup";
 
 // import { USeEffectFun } from "./hooks/ComponentUseEffect.jsx";
@@ -27,7 +31,8 @@ function App() {
         {/* <USeEffectFun/> */}
         {/* <Cleanup/> */}
         {/* <News/> */}
-        <Weather/>
+        {/* <Weather/> */}
+        <Pokemon/>
     </>
   );
 }
