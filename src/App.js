@@ -1,6 +1,7 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
 
+import { Asyncpokemon } from "./hooks/ComponentUseEffect.jsx/Asyncpokemon";
 import { Pokemon } from "./hooks/ComponentUseEffect.jsx/Pokemon";
 
 // import { News } from "./hooks/ComponentUseEffect.jsx/News";
@@ -32,7 +33,8 @@ function App() {
         {/* <Cleanup/> */}
         {/* <News/> */}
         {/* <Weather/> */}
-        <Pokemon/>
+        {/* <Pokemon/> */}
+        <Asyncpokemon/>
     </>
   );
 }
