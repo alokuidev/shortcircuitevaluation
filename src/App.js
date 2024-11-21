@@ -2,7 +2,7 @@
 // import State from "./State";
 
 import { Asyncpokemon } from "./hooks/ComponentUseEffect.jsx/Asyncpokemon";
-import { Pokemon } from "./hooks/ComponentUseEffect.jsx/Pokemon";
+// import { Pokemon } from "./hooks/ComponentUseEffect.jsx/Pokemon";
 
 // import { News } from "./hooks/ComponentUseEffect.jsx/News";
 
