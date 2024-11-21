@@ -2,13 +2,21 @@ import { useEffect, useState } from "react";
 import './Pokemon.css';
 export const Pokemon = () =>{
     const [apiData, setApiData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("")
     const API = 'https://pokeapi.co/api/v2/pokemon/pikachu';
 
     const fetchPokemon = () =>{
         fetch(API)
         .then((res) => res.json())
-        .then((data) => setApiData(data))
-        .catch((error) => console.log(error));
+        .then((data) => {
+            setApiData(data);
+            setLoading(false);
+        })
+        .catch((error) => {
+            setError(error);
+            setLoading(false);
+        });
     }
 
     useEffect(() =>{
@@ -18,7 +26,9 @@ export const Pokemon = () =>{
     return(
     
     <> 
-    {apiData ? ( 
+    {loading && !error? 'Loading...' : ''}
+    {error ? 'Error:' + error.message : ''}
+    {!loading ? ( 
     <div className="card-container">
     <div className="pokemon-card">
       <div className="card-header">
@@ -74,9 +84,7 @@ export const Pokemon = () =>{
     </div>
     {/* <!-- Add more Pokémon cards as needed --> */}
   </div>
-    ) :    
-        <p>Loading</p>
-    }
+    ) : ''}
       
      </> 
     )
