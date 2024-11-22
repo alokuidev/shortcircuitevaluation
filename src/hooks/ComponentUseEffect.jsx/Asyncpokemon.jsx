@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import './Pokemon.css';
 export const Asyncpokemon = () =>{
@@ -6,18 +8,7 @@ export const Asyncpokemon = () =>{
     const [error, setError] = useState("")
     const API = 'https://pokeapi.co/api/v2/pokemon/pikachu';
 
-    // const fetchPokemon = () =>{
-    //     fetch(API)
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //         setApiData(data);
-    //         setLoading(false);
-    //     })
-    //     .catch((error) => {
-    //         setError(error);
-    //         setLoading(false);
-    //     });
-    // }
+    
 
     const fetchPokemon = async() =>{
         try{
@@ -42,6 +33,8 @@ export const Asyncpokemon = () =>{
     {loading && !error? 'Loading...' : ''}
     {error ? 'Error:' + error.message : ''}
     {!loading ? ( 
+     <>
+     <h1>Let's Catch Pakemon</h1>   
     <div className="card-container">
     <div className="pokemon-card">
       <div className="card-header">
@@ -97,6 +90,7 @@ export const Asyncpokemon = () =>{
     </div>
     {/* <!-- Add more Pokémon cards as needed --> */}
   </div>
+  </>
     ) : ''}
       
      </> 

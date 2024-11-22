@@ -1,7 +1,9 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
 
-import { Asyncpokemon } from "./hooks/ComponentUseEffect.jsx/Asyncpokemon";
+import Useref from "./hooks/ComponentUseRef/Useref";
+
+//  import { Asyncpokemon } from "./hooks/ComponentUseEffect.jsx/Asyncpokemon";
 // import { Pokemon } from "./hooks/ComponentUseEffect.jsx/Pokemon";
 
 // import { News } from "./hooks/ComponentUseEffect.jsx/News";
@@ -26,7 +28,7 @@ function App() {
     <>
         {/* <State/> */}
         {/* <Counter/> */}
-        {/* <Form2/> */}
+        {/* <Form/> */}
         {/* <Login/> */}
         {/* <Contact/> */}
         {/* <USeEffectFun/> */}
@@ -34,7 +36,8 @@ function App() {
         {/* <News/> */}
         {/* <Weather/> */}
         {/* <Pokemon/> */}
-        <Asyncpokemon/>
+        {/* <Asyncpokemon/> */}
+        <Useref/>
     </>
   );
 }
