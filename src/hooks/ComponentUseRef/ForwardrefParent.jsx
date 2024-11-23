@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ChildRef } from "./ForwardrefChild";
+import { BeforeReact19 } from "./ForwardrefChild18";
 
 const RefFun = () => {
 
@@ -12,8 +12,8 @@ const RefFun = () => {
     return(
         <>
         <form onSubmit={formSubmit} >
-            <ChildRef label="Username" ref={userid} />
-            <ChildRef label="Password" ref={pass} /> 
+            <BeforeReact19 label="Username" ref={userid} />
+            <BeforeReact19 label="Password" ref={pass} /> 
             <button type="submit" className="login-button">Login</button>
         </form>    
         </>
