@@ -6,8 +6,12 @@
 */
 // import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
 
-import { Provider } from "./hooks/CreateContext2/Provider";
-import { Receiver } from "./hooks/CreateContext2/Receiver";
+import Contextapi from "./hooks/CreateContext3/Contextapi";
+import { ContextApiReceiver } from "./hooks/CreateContext3/ContextApiReceiver";
+
+// import { Provider } from "./hooks/CreateContext2/Provider";
+// import { Receiver } from "./hooks/CreateContext2/Receiver";
+
 
 
 
@@ -56,9 +60,13 @@ function App() {
             <Home/>
         </BiodataProvider>  */}
         
-        <Provider>
-              <Receiver/>
-        </Provider>
+        {/* <Provider>
+          <Receiver/>
+        </Provider> */}
+
+        <Contextapi>
+          <ContextApiReceiver/>
+        </Contextapi>
         
        
         
