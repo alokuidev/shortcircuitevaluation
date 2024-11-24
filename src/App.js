@@ -6,8 +6,11 @@
 */
 // import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
 
-import Contextapi from "./hooks/CreateContext3/Contextapi";
-import { ContextApiReceiver } from "./hooks/CreateContext3/ContextApiReceiver";
+import { ContextApi } from "./hooks/Assignment/ContextApi";
+import Counter from "./hooks/Assignment/Counter";
+
+// import Contextapi from "./hooks/CreateContext3/Contextapi";
+// import { ContextApiReceiver } from "./hooks/CreateContext3/ContextApiReceiver";
 
 // import { Provider } from "./hooks/CreateContext2/Provider";
 // import { Receiver } from "./hooks/CreateContext2/Receiver";
@@ -64,10 +67,12 @@ function App() {
           <Receiver/>
         </Provider> */}
 
-        <Contextapi>
+        {/* <Contextapi>
           <ContextApiReceiver/>
-        </Contextapi>
-        
+        </Contextapi> */}
+       <ContextApi> 
+            <Counter/>
+        </ContextApi>
        
         
     </>
