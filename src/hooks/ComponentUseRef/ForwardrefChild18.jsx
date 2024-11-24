@@ -5,8 +5,8 @@ export const BeforeReact19 = (props, ref) =>{
     return(
         <>
         
-            <label htmlFor={id}>{props.label}</label>
-            <input type="text" ref={props.ref}/>
+            <label htmlFor={id+':'+props.label}>{props.label}</label>
+            <input type="text" id={id+':'+props.label} ref={props.ref}/>
        
         </>
     )
