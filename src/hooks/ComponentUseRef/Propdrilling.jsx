@@ -1,20 +1,27 @@
+import { createContext, useContext } from 'react';
 import './Propdrilling.css';
+const DataProvider = createContext();
 
-const ChildComponent = ({ data }) => {
-    return <GranChildComponent data={data}/>
+const ChildComponent = () => {
+    return <GranChildComponent/>
 };
-const GranChildComponent = ({ data }) => {
-    return <GreatGranChildComponent data={data}/>
+const GranChildComponent = () => {
+    return <GreatGranChildComponent/>
 };
-const GreatGranChildComponent = ({ data }) => {
+const GreatGranChildComponent = () => {
+    const data = useContext(DataProvider);
     return <h1>{data}</h1>;
 };
 
 const Propdrilling = () => {
+    
     return (
         <>
             <h1>Hello !!! Testing Propdrilling</h1>
-            <ChildComponent data="Passing Props" />
+            <DataProvider.Provider value="Passing Props">
+                <ChildComponent />
+            </DataProvider.Provider>
+            
         </>
     );
 };

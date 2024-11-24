@@ -1,7 +1,10 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
 
-import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
+import { BiodataProvider } from "./hooks/ContextAPI/Createcompoent";
+import Home from "./hooks/ContextAPI/Home";
+
+// import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
 
 // import RefFun from "./hooks/ComponentUseRef/ForwardrefParent";
 
@@ -43,7 +46,11 @@ function App() {
         {/* <Asyncpokemon/> */}
         {/* <Useref/> */}
         {/* <RefFun/> */}
-        <Propdrilling/>
+        {/* <Propdrilling/> */}
+        <BiodataProvider>
+            <Home/>
+        </BiodataProvider>
+        
     </>
   );
 }
