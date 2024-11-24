@@ -1,10 +1,15 @@
 // import Counter from "./hooks/ComponentUSeState/Counter";
 // import State from "./State";
-
-import { BiodataProvider } from "./hooks/ContextAPI/Createcompoent";
-import Home from "./hooks/ContextAPI/Home";
-
+/*use it together
+ import { BiodataProvider } from "./hooks/ContextAPI/Createcompoent";
+ import Home from "./hooks/ContextAPI/Home";
+*/
 // import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
+
+import { Provider } from "./hooks/CreateContext2/Provider";
+import { Receiver } from "./hooks/CreateContext2/Receiver";
+
+
 
 // import RefFun from "./hooks/ComponentUseRef/ForwardrefParent";
 
@@ -47,9 +52,15 @@ function App() {
         {/* <Useref/> */}
         {/* <RefFun/> */}
         {/* <Propdrilling/> */}
-        <BiodataProvider>
+        {/* <BiodataProvider>
             <Home/>
-        </BiodataProvider>
+        </BiodataProvider>  */}
+        
+        <Provider>
+              <Receiver/>
+        </Provider>
+        
+       
         
     </>
   );
