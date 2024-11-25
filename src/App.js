@@ -8,6 +8,7 @@
 
 import { ThemeChangeContextApi } from "./hooks/ThemechangerAssignment/ThemeChangeContextApi";
 import Themechanger from "./hooks/ThemechangerAssignment/Themechanger";
+import { Reducer } from "./hooks/UseRedeucer";
 
 // import { ContextApi } from "./hooks/Assignment/ContextApi";
 // import Counter from "./hooks/Assignment/Counter";
@@ -77,9 +78,10 @@ function App() {
        {/* <ContextApi> 
               <Counter/>
         </ContextApi> */}
-        <ThemeChangeContextApi>
+        {/* <ThemeChangeContextApi>
             <Themechanger/>
-        </ThemeChangeContextApi>
+        </ThemeChangeContextApi> */}
+        <Reducer/>
     </>
   );
 }
