@@ -9,7 +9,7 @@ const Themechanger = () => {
       <div className={`fullscreen-div ${theme ? 'light-theme' : 'dark-theme '}`}>
         <header className="header">
           <button id="themeToggle" className="theme-toggle-btn" onClick={changeTheme}>
-            Switch to Dark
+            Switch to {theme ?  'Dark theme ' : 'Light theme'}
           </button>
         </header>
         <div className="container">
