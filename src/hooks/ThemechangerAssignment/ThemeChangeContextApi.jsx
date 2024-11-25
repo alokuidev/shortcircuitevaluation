@@ -7,8 +7,8 @@ export const ThemeChangeContextApi = ({children}) =>{
     const [theme, changeTheme] = useCustomHook();
 
     return(
-        <ThemeChangecontextProvider value={{theme, changeTheme}}>
+        <ThemeChangecontextProvider.Provider value={{theme, changeTheme}}>
             {children}
-        </ThemeChangecontextProvider>
+        </ThemeChangecontextProvider.Provider>
     )
 }
