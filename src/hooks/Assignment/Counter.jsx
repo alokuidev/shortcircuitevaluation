@@ -1,10 +1,11 @@
-import { useContext } from 'react';
+import { use } from 'react';
 import './Counter.css';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Countprovider } from './ContextApi';
 const Counter = () =>{
-    const {count, increment, decrement} = useContext(Countprovider)
+    const {count, increment, decrement} = use(Countprovider)
+  
     return(
         <>
             <Header count={count}/>

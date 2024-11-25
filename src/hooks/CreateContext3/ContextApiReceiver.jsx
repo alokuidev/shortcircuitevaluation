@@ -3,6 +3,9 @@ import { Contextapicomp } from "./Contextapi"
 
 export const ContextApiReceiver = () =>{
     const {count,increment,decrement} = useContext(Contextapicomp)
+    
+    
+    
     return(
         <>
             <p>{count}</p>

@@ -12,6 +12,7 @@ export const ContextApi = ({children}) =>{
         return setCount(count - 1);
     }
 
+    
     return(
         <>
             <Countprovider.Provider value={{count, increment, decrement}}>

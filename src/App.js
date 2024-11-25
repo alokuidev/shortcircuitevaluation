@@ -6,8 +6,11 @@
 */
 // import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
 
-import { ContextApi } from "./hooks/Assignment/ContextApi";
-import Counter from "./hooks/Assignment/Counter";
+import { ThemeChangeContextApi } from "./hooks/ThemechangerAssignment/ThemeChangeContextApi";
+import Themechanger from "./hooks/ThemechangerAssignment/Themechanger";
+
+// import { ContextApi } from "./hooks/Assignment/ContextApi";
+// import Counter from "./hooks/Assignment/Counter";
 
 // import Contextapi from "./hooks/CreateContext3/Contextapi";
 // import { ContextApiReceiver } from "./hooks/CreateContext3/ContextApiReceiver";
@@ -70,11 +73,13 @@ function App() {
         {/* <Contextapi>
           <ContextApiReceiver/>
         </Contextapi> */}
-       <ContextApi> 
-            <Counter/>
-        </ContextApi>
-       
-        
+
+       {/* <ContextApi> 
+              <Counter/>
+        </ContextApi> */}
+        <ThemeChangeContextApi>
+            <Themechanger/>
+        </ThemeChangeContextApi>
     </>
   );
 }
