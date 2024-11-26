@@ -6,9 +6,11 @@
 */
 // import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
 
-import { ThemeChangeContextApi } from "./hooks/ThemechangerAssignment/ThemeChangeContextApi";
-import Themechanger from "./hooks/ThemechangerAssignment/Themechanger";
-import { Reducer } from "./hooks/UseRedeucer";
+import { Count } from "./hooks/Usememo/Count";
+
+// import { ThemeChangeContextApi } from "./hooks/ThemechangerAssignment/ThemeChangeContextApi";
+// import Themechanger from "./hooks/ThemechangerAssignment/Themechanger";
+// import { Reducer } from "./hooks/UseRedeucer";
 
 // import { ContextApi } from "./hooks/Assignment/ContextApi";
 // import Counter from "./hooks/Assignment/Counter";
@@ -81,8 +83,9 @@ function App() {
         {/* <ThemeChangeContextApi>
             <Themechanger/>
         </ThemeChangeContextApi> */}
-        <Reducer/>
-    </>
+        {/* <Reducer/> */}
+        <Count/>
+        </>
   );
 }
 
