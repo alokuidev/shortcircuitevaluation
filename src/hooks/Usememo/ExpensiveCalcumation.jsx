@@ -14,7 +14,6 @@ const ExpensiveCalcumation = () =>{
       const total = useMemo(()=>{
             return performExpensiveCalculation();
       },[])
-      //const total = 
 
       return <p>{total}</p>
 }
