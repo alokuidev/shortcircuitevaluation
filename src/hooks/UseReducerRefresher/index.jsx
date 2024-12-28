@@ -48,7 +48,7 @@ export default function UseReducerRefresher(){
                 <div className="button-group">
                     <button id="decrement" className="counter-button" disabled={ state.count === 0} onClick={() => dispatch({type:'decrement'})}>- Counter</button>
                     <button id="increment" className="counter-button" style={{backgroundColor:'blue'}} onClick={() => dispatch({type:'reset'})} >Reset</button>
-                    <button id="increment" className="counter-button" onClick={() => dispatch({type:'increment'})} >+ Counter</button>
+                    <button id="increment"  className="counter-button" onClick={() => dispatch({type:'increment'})} >+ Counter</button>
                 </div>
             </div>
         </>
