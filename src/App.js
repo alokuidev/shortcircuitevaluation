@@ -1,12 +1,14 @@
-// import Counter from "./hooks/ComponentUSeState/Counter";
-// import State from "./State";
+//import Counter from "./hooks/ComponentUSeState/Counter";
+ //import State from "./State";
 /*use it together
  import { BiodataProvider } from "./hooks/ContextAPI/Createcompoent";
  import Home from "./hooks/ContextAPI/Home";
 */
 // import Propdrilling from "./hooks/ComponentUseRef/Propdrilling";
 
-import USeCallback from "./hooks/Usecallback/Button";
+import UseReducerRefresher from "./hooks/UseReducerRefresher";
+
+// import USeCallback from "./hooks/Usecallback/Button";
 
 // import { Count } from "./hooks/Usememo/Count";
 
@@ -40,12 +42,12 @@ import USeCallback from "./hooks/Usecallback/Button";
 // import Cleanup from "./hooks/ComponentUseEffect.jsx/Cleanup";
 
 // import { USeEffectFun } from "./hooks/ComponentUseEffect.jsx";
-// import { Contact } from "./hooks/FormComponent/Contact";
+//import { Contact } from "./hooks/FormComponent/Contact";
 
 // import Login from "./hooks/FormComponent/LoginForm";
 
 // import Form from "./hooks/FormComponent/Form";
-// import Form2 from "./hooks/FormComponent/Form2";
+ //import Form2 from "./hooks/FormComponent/Form2";
 
 
 function App() {
@@ -55,7 +57,7 @@ function App() {
     <>
         {/* <State/> */}
         {/* <Counter/> */}
-        {/* <Form/> */}
+        {/* <Form2/> */}
         {/* <Login/> */}
         {/* <Contact/> */}
         {/* <USeEffectFun/> */}
@@ -87,7 +89,8 @@ function App() {
         </ThemeChangeContextApi> */}
         {/* <Reducer/> */}
         {/* <Count/> */}
-        <USeCallback/>
+        {/* <USeCallback/> */}
+        <UseReducerRefresher/>
         </>
   );
 }
