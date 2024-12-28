@@ -2,8 +2,9 @@ import { useReducer } from 'react'
 import './style.css'
 export default function UseReducerRefresher(){
     const merafun = (state,action) =>{
-        const { type } = action;
-        switch (type) {
+        //const { action } = action;
+        console.log(action)
+        switch (action) {
             case 'decrement':
                 return state - 1;
             case 'increment':
@@ -25,8 +26,8 @@ export default function UseReducerRefresher(){
                     <label htmlFor="styled-input" className="input-label">Add Value</label>
                 </div>
                 <div className="button-group">
-                    <button id="decrement" className="counter-button" disabled={count === 0} onClick={() => dispatch({type:'decrement'})} >- Counter</button>
-                    <button id="increment" className="counter-button" onClick={() => dispatch({type:'increment'})} >+ Counter</button>
+                    <button id="decrement" className="counter-button" disabled={count === 0} onClick={() => dispatch('decrement')} >- Counter</button>
+                    <button id="increment" className="counter-button" onClick={() => dispatch('increment')} >+ Counter</button>
                 </div>
             </div>
         </>
